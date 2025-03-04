@@ -17,6 +17,5 @@ if(empty($firstname) || empty($lastname) || empty($favoritepet)) {
     echo "Lastname: " . $lastname;
     echo "<br>";
     echo "Favorite Pet: " . $favoritepet;
-}else{
-    header("Location: ../index.php");
 }
+?>

@@ -18,10 +18,12 @@
             <input type="text" name="lastname" id="lastname" placeholder="Lastname...">
             <label for="favoritepet">Fav Pet?</label>
             <select name="favoritepet" id="favoritepet">
-                <option value="none">None</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="bird">Bird</option>
+                <?php
+                $pets = ['none' => 'None', 'dog' => 'Dog', 'cat' => 'Cat', 'bird' => 'Bird'];
+                foreach ($pets as $value => $label) {
+                    echo "<option value=\"$value\">$label</option>";
+                }
+                ?>
             </select>
             <button type="submit">Submit</button>
         </form>
